@@ -62,4 +62,27 @@ img{
     border-radius: 1rem;
 
 }
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .choices {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .choice:nth-child(3) {
+        grid-column: span 2;
+        justify-self: center;
+    }
+    #msg{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    .choice:nth-child(1) {
+        justify-self: center;
+    }
+    .choice:nth-child(2) {
+        justify-self: center;
+    }
+}
 
